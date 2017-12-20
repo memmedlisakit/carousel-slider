@@ -1,0 +1,66 @@
+$SliderWidth: 1000px;
+$SliderHeight: 300px;
+
+
+
+$firstItemColor:#BF3F3F;
+$secondItemColor:#3FBF3F;
+$thirdItemColor:#BFBF3F;
+$fourthItemColor:#7F3FBF;
+$fivethItemColor:#3FBF7F;
+
+.slider{
+	width: $SliderWidth;
+	height: $SliderHeight;
+	border: 1px solid grey;
+	margin:100px auto;
+	position:relative;
+	// overflow: hidden;
+	.item{
+		position:absolute;
+		width: $SliderWidth;
+		height: 100%;
+		color: white;
+		text-align: center;
+		line-height: 300px;
+	}
+	div:nth-of-type(1){
+		background-color: $firstItemColor;
+	}
+	div:nth-of-type(2){
+		background-color: $secondItemColor;
+	}
+	div:nth-of-type(3){
+		background-color: $thirdItemColor;
+	}
+	div:nth-of-type(4){
+		background-color: $fourthItemColor;
+	}
+	div:nth-of-type(5){
+		background-color: $fivethItemColor;
+	}
+	.buttons{
+		position:absolute;
+		left:0px;
+		top:45%;
+		width:100%;
+		>div{
+			font-size: 2em;
+			width: 30px;
+			height: 30px;
+			text-align: center;
+			line-height: 30px;
+			box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+			cursor: pointer;
+			user-select:none;
+		}
+		.left{
+			float:left
+		}
+		.right{
+			float: right;
+		}
+	}
+}
+
+
